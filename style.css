@@ -65,13 +65,11 @@ html {
 
   
 
-html body {
+html, body {
 	font-family: 'Raleway light', arial, sans-serif;
 	color: #2d2d2d;
 	font-size: 16px;
 	scroll-behavior: smooth;
-	
-
 }
 
 .container {
@@ -365,3 +363,24 @@ padding-bottom: 120px;
 	font-family: raleway;
   padding-left: 50px;
 }
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+ }
+ .screen-reader-text:focus {
+	clip: auto !important;
+	display: block;
+	height: auto;
+	left: 5px;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* above all content */
+ }
+
+ #main[tabindex="-1"]:focus {
+	outline: 0;
+	color: #e2574c; 
+ }
