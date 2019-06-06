@@ -60,10 +60,8 @@ html {
   }
 /*my code starts here........................*/
 
-@media all and (max-width: 1240px) and (min-width: 600px)
+@media all and (max-width: 1240px) and (min-width: 600px) {
 
-
-  
 
 html, body {
 	font-family: 'Raleway light', arial, sans-serif;
@@ -74,34 +72,30 @@ html, body {
 
 .container {
 	max-width:1240px;
-	width:95%;
+	width:auto;
 	margin:0 auto;	
 }
-
+}
 
 /* Nav-----------------------*/
 
 
 .site_header{
 	display: flex;
-	margin-top: 10px;
-	padding-top: 10px;
-	flex-wrap: wrap;
 	flex-direction: row;
-	flex-basis: 100%;
+	align-self: auto;
 	align-items: center;
+	margin-top: 30px;
+	padding-top:10px;
+	margin-bottom: 20px;
 }
 .logo{
-	height:auto;
-	order: 1;
-	flex-basis: 50%;
+	height:auto;	
 }
 .logo img {
 	width: 120px;
 }
- .cart{
-	order: 2;
-	flex-basis: 50%;	
+ .cart{	
 	text-align: right;
 }
 .cart img {
@@ -113,7 +107,7 @@ html, body {
 	flex-direction: row;
 	justify-content: center;
 	text-align: center;
-	order: 3;
+	
 	flex-basis:100%;
 }
 .nav ul {
@@ -121,10 +115,16 @@ html, body {
 	align-items: center;
 }
 .nav a {
-	color: #e2574c; 
+	color: #db3a26; 
 	margin: 25px;
 	flex-direction: row;
 	align-items: center;
+	text-decoration: none;
+}
+
+ul {
+	margin-left: 80px;
+	margin-right: 100px;
 }
 /*----------------*/
 
@@ -140,18 +140,19 @@ html, body {
 	width: 100%;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	font-family: Playfair Display Web;
+	font-family: 'Playfair Display Web';
 	font-size: 3rem;
 	font-weight: 400;
 	color: white;
-	text-shadow: 2px 2px gray;
+	text-shadow: 2px 2px 10px black;
 }
 .collection {
-	font-family: raleway;
+	font-family: 'raleway';
 	font-size: 1.25rem;
 	color: white;
-	text-shadow: 2px 2px 4px gray}
+	text-shadow: 2px 2px 10px black
 }
+
 
 .about-text {
 	margin-top: 20px;
@@ -160,7 +161,7 @@ html, body {
 
 .about-text h1 {
 	text-align: center;
-	font-family: Playfair Display Web;
+	font-family: 'Playfair Display Web';
 	font-size: 2.4rem;
 	font-style: italic;
 	font-weight: lighter;
@@ -173,7 +174,7 @@ html, body {
 }
 .about-text p {
 	text-align: center;
-	font-family: raleway;
+	font-family: 'raleway';
 	font-size: 1.15rem;
 	font-style: normal;
 	font-weight: lighter;
@@ -254,23 +255,23 @@ html, body {
 }
 .carousel-cell p {
 	color:#969696;
-	font-family: Raleway;
+	font-family: 'Raleway';
 	font-size: 12px;
 	text-align: center;
 }
 .carousel-cell h3 {
-	color: #e2574c;
+	color: #db3a26;
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-family: Playfair Display Web;
+	font-family: 'Playfair Display Web';
 	font-size: 23px;
 }
 
 .products h2 {
 	text-align: center;
 	font-size: 2.4rem;
-	font-family: Playfair Display Web;
+	font-family: 'Playfair Display Web';
 	font-style: italic;
 	line-height: 1;
 	margin-top: 40px;
@@ -279,7 +280,7 @@ html, body {
 .signup h2 {
 	text-align: center;
 	font-size: 2.4rem;
-	font-family: Playfair Display Web;
+	font-family: 'Playfair Display Web';
 	font-style: italic;
 	line-height: 1;
 	color: white;
@@ -305,7 +306,7 @@ padding-bottom: 120px;
 
 .signup p {
 	text-align: center;
-	font-family: raleway;
+	font-family: 'raleway';
 	font-size: 1.15rem;
 	font-weight: lighter;
 	line-height: 2;
@@ -321,7 +322,7 @@ padding-bottom: 120px;
 .form input {
 	height: 35px;
 	border-radius: 30px;
-	font-family: raleway;
+	font-family: 'raleway';
 
 }
 .input button {
@@ -342,15 +343,15 @@ padding-bottom: 120px;
 }
 .copyright p {
 	color: white;
-	font-family: Playfair Display Web;
+	font-family: 'Playfair Display Web';
 	line-height: 1.5;
 }
 .copyright a {
-	font-family: Playfair Display Web;
+	font-family: 'Playfair Display Web';
 	color: white;
 }
 .address p  {
-	font-family: Playfair Display Web;
+	font-family: 'Playfair Display Web';
 	color: #969696;
 	line-height: 1.5;
 }
@@ -360,27 +361,30 @@ padding-bottom: 120px;
 }
 .network a {
 	color: white;
-	font-family: raleway;
+	font-family: 'raleway';
   padding-left: 50px;
 }
+
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
- }
- .screen-reader-text:focus {
-	clip: auto !important;
-	display: block;
-	height: auto;
-	left: 5px;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* above all content */
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+	font-family: 'Raleway', Arial, sans-serif;
+	color: #db3a26;
  }
 
- #main[tabindex="-1"]:focus {
-	outline: 0;
-	color: #e2574c; 
+ .screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* above all content */
+ }
+
+ #shop[tabindex="-1"]:focus {
+    outline: 0;
  }
