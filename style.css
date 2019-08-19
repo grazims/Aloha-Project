@@ -29,7 +29,7 @@ body {
   width: 50%;
 }
 .logo img {
-  width: 120px;
+  width: 100px;
 }
 .cart {
   order: 2;
@@ -37,7 +37,7 @@ body {
   width: 50%;
 }
 .cart img {
-  width: 48px;
+  width: 40px;
 }
 .nav {
   order: 3;
@@ -224,7 +224,7 @@ a:hover {
 .products h2 {
   text-align: center;
   font-size: 2.4rem;
-  font-family: Playfair Display Web;
+  font-family: "Playfair Display Web";
   font-style: italic;
   line-height: 1;
   margin-top: 40px;
@@ -314,6 +314,15 @@ a:hover {
   line-height: 1.5;
   text-align: center;
 }
+.phone {
+  color: #fff;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+.phone a {
+  color: #fff;
+}
 .copyright a {
   font-family: "Playfair Display Web";
   color: white;
@@ -337,8 +346,206 @@ a:hover {
   font-family: "Raleway";
   padding-left: 20px;
 }
+a:hover {
+  color: #b64036;
+}
 
 #main[tabindex="-1"]:focus {
   outline: 0;
   color: #e2574c;
+}
+
+/*--------- MEDIA QUERIES ----------*/
+
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .logo {
+    height: auto;
+    order: 1;
+    width: 25%;
+  }
+  /* .logo img {
+    width: 120px;
+  } */
+  .cart {
+    order: 3;
+    text-align: right;
+    width: 25%;
+  }
+  .cart img {
+    width: 48px;
+  }
+  .nav {
+    order: 2;
+    align-self: center;
+    flex: 1 0 auto;
+  }
+  .nav ul {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .about-text {
+    padding: 3rem 0;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    font-size: 2.5rem;
+  }
+  .about-text p {
+    font-size: 1.1rem;
+  }
+
+  .mens {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(images/mens-category.jpg);
+    flex-basis: 50%;
+    justify-content: center;
+    border-bottom: 4px solid white;
+  }
+  .trends {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(images/trends-category.jpg);
+    flex-basis: 25%;
+    justify-content: center;
+    border-left: 8px solid white;
+    border-bottom: 4px solid white;
+  }
+  .glasses {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(images/glasses-category.jpg);
+    flex-basis: 25%;
+    justify-content: center;
+    border-left: 8px solid white;
+    border-bottom: 4px solid white;
+  }
+  .sale {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(images/sale-category.jpg);
+    flex-basis: 25%;
+    justify-content: center;
+    border-top: 4px solid white;
+    /* border-right: 4px solid white; */
+  }
+  .bags {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(images/bags-category.jpg);
+    flex-basis: 25%;
+    justify-content: center;
+    border-top: 4px solid white;
+  }
+  .womens {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(images/womens-category.jpg);
+    flex-basis: 50%;
+    justify-content: center;
+    border-top: 4px solid white;
+    border-left: 8px solid white;
+  }
+
+  .signup {
+    height: 300px;
+    padding-top: 2.3rem;
+    padding-bottom: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .signup h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px gray;
+  }
+
+  .signup p {
+    /* font-size: 1.2rem; */
+    line-height: 2;
+    margin-bottom: 1rem;
+    margin-right: 0.7rem;
+    margin-left: 0.7rem;
+  }
+
+  .form {
+    display: block;
+    position: relative;
+    margin: 2.3rem auto 0;
+    width: 90%;
+  }
+  .email {
+    padding: 0.5rem 1.75rem;
+    padding-right: 135px;
+    border: none;
+    border-radius: 30px;
+    font-family: "Raleway";
+    color: #969696;
+  }
+  .button {
+    position: absolute;
+    background-color: #e2574c;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.25rem 1.5rem;
+    border-radius: 10px;
+    width: 100px;
+    right: 0.25rem;
+    top: 0.25rem;
+    border: none;
+    cursor: pointer;
+  }
+  /*footer*/
+  .container2 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact {
+    width: 50%;
+    margin-left: 2rem;
+  }
+  .copyright p {
+    line-height: 1.5;
+    text-align: unset;
+    padding-bottom: 0.5rem;
+  }
+  .phone {
+    color: #fff;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: unset;
+  }
+  .phone a {
+    color: #fff;
+  }
+  .address p {
+    line-height: 1.5;
+    text-align: unset;
+  }
+  .network {
+    display: unset;
+    justify-content: unset;
+    margin-right: 2rem;
+  }
+  .name {
+    display: unset;
+  }
+  .network li {
+    padding: 0.5rem;
+  }
+  .network a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: #b64036;
+  }
+  .fab {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
 }
