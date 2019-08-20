@@ -16,6 +16,6 @@ Link https://grazims.github.io/Aloha/
 <li>jQuery</li>
 </ul>
 <strong>Personal Learnings</strong><br>
-> This is my first project. The first time was quite hard, now that I have more experience redoing it was easier. The mobile  > first approach made more sense, and it makes everything easier afterall. 
+ This is my first project. The first time was quite hard, now that I have more experience redoing it was easier. The mobile first approach made more sense, and it makes everything easier afterall. 
 
 
