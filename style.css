@@ -245,7 +245,6 @@ a:hover {
 }
 
 .signup h2 {
-  /* text-align: center; */
   font-size: 2.2rem;
   font-family: "Playfair Display Web";
   font-style: italic;
@@ -256,7 +255,6 @@ a:hover {
 }
 
 .signup p {
-  /* text-align: center; */
   font-family: "Raleway";
   font-size: 1.1rem;
   font-weight: lighter;
@@ -269,11 +267,12 @@ a:hover {
 }
 
 .form {
-  display: block;
+  margin: 0 auto;
   position: relative;
-  margin: 2.3rem auto 0;
-  width: 90%;
+  max-width: 360px;
+  width: 100%;
 }
+
 .email {
   padding: 0.5rem 1.75rem;
   padding-right: 135px;
@@ -285,13 +284,13 @@ a:hover {
 .button {
   position: absolute;
   background-color: #e2574c;
+  top: 4px;
+  right: 40px;
   color: #fff;
   font-weight: 500;
   padding: 0.25rem 1.5rem;
   border-radius: 10px;
   width: 100px;
-  right: 0.25rem;
-  top: 0.25rem;
   border: none;
   cursor: pointer;
 }
@@ -468,12 +467,6 @@ a:hover {
     margin-left: 1rem;
   }
 
-  .form {
-    display: block;
-    position: relative;
-    margin: 2.3rem auto 0;
-    width: 90%;
-  }
   .email {
     padding: 0.5rem 1.75rem;
     padding-right: 135px;
@@ -481,19 +474,6 @@ a:hover {
     border-radius: 30px;
     font-family: "Raleway";
     color: #969696;
-  }
-  .button {
-    position: absolute;
-    background-color: #e2574c;
-    color: #fff;
-    font-weight: 500;
-    padding: 0.25rem 1.5rem;
-    border-radius: 10px;
-    width: 100px;
-    right: 0.25rem;
-    top: 0.25rem;
-    border: none;
-    cursor: pointer;
   }
   /*footer*/
   .container2 {
@@ -557,13 +537,7 @@ a:hover {
     font-size: 3rem;
   }
   .categories div {
-    /* background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
     height: 350px;
-    /* width: 100%; */
   }
   .signup {
     padding-right: 5rem;
