@@ -1,14 +1,12 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   color: #2d2d2d;
   font-size: 14px;
   font-family: "Raleway Light", "sans-serif";
-  max-width: 1240px;
+  max-width: 1360px;
   margin: 0 auto;
 }
 
@@ -158,7 +156,7 @@ a:hover {
 .mens {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(images/mens-category.jpg);
-  flex-basis: 1000%;
+  flex-basis: 100%;
   justify-content: center;
   border-bottom: 8px solid white;
 }
@@ -238,6 +236,7 @@ a:hover {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: bottom;
+  text-align: center;
   width: 100%;
   height: 300px;
   padding-top: 2rem;
@@ -246,7 +245,7 @@ a:hover {
 }
 
 .signup h2 {
-  text-align: center;
+  /* text-align: center; */
   font-size: 2.2rem;
   font-family: "Playfair Display Web";
   font-style: italic;
@@ -257,7 +256,7 @@ a:hover {
 }
 
 .signup p {
-  text-align: center;
+  /* text-align: center; */
   font-family: "Raleway";
   font-size: 1.1rem;
   font-weight: lighter;
@@ -299,6 +298,7 @@ a:hover {
 .button:hover {
   background-color: #b64036;
 }
+
 /* Footer section */
 
 .container2 {
@@ -367,9 +367,6 @@ a:hover {
     order: 1;
     width: 25%;
   }
-  /* .logo img {
-    width: 120px;
-  } */
   .cart {
     order: 3;
     text-align: right;
@@ -432,7 +429,6 @@ a:hover {
     flex-basis: 25%;
     justify-content: center;
     border-top: 4px solid white;
-    /* border-right: 4px solid white; */
   }
   .bags {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -454,6 +450,8 @@ a:hover {
     height: 300px;
     padding-top: 2.3rem;
     padding-bottom: 2.3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
     margin-bottom: 0.5rem;
   }
 
@@ -464,11 +462,10 @@ a:hover {
   }
 
   .signup p {
-    /* font-size: 1.2rem; */
     line-height: 2;
     margin-bottom: 1rem;
-    margin-right: 0.7rem;
-    margin-left: 0.7rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   .form {
@@ -548,4 +545,53 @@ a:hover {
     padding-left: 0;
     padding-right: 1rem;
   }
+}
+
+/* For Desktops */
+
+@media only screen and (min-width: 1240px) {
+  .about-text {
+    padding: 3rem 0;
+    margin-right: 20rem;
+    margin-left: 20rem;
+    font-size: 3rem;
+  }
+  .categories div {
+    /* background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 350px;
+    /* width: 100%; */
+  }
+  .signup {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  .container2 {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
+}
+
+#main[tabindex="-1"]:focus {
+  outline: 0;
+  color: #e2574c;
 }
