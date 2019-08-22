@@ -6,8 +6,8 @@ body {
   color: #2d2d2d;
   font-size: 14px;
   font-family: "Raleway Light", "sans-serif";
-  max-width: 1360px;
-  margin: 0 auto;
+  /* max-width: 1240px; */
+  /* margin: 0 auto; */
 }
 
 /* Nav-----------------------*/
@@ -543,6 +543,11 @@ a:hover {
     padding-right: 5rem;
     padding-left: 5rem;
   }
+  .latest {
+    margin-right: 12rem;
+    margin-left: 12rem;
+  }
+
   .container2 {
     padding-right: 6rem;
     padding-left: 6rem;
